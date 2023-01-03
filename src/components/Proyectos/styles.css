@@ -107,6 +107,14 @@
   .container-project {
     margin:  0;
   }
+  
+.detail-portfolio {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.text-title{
+  font-size: 4rem;
+}
 }
 
 @media screen and (min-width: 1200px) {

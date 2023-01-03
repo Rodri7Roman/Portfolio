@@ -102,6 +102,13 @@
     padding-top: 80px;
     width:65%;
   }
+  .text-bienvenida {
+    font-size: 4rem;
+
+  }
+  .text-web {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {
