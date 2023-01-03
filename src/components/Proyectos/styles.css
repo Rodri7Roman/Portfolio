@@ -1,0 +1,117 @@
+.container-portfolio {
+  padding-top: 80px;
+  width: 90%;
+  margin: 0 auto;
+  /* text-align: center; */
+}
+
+.text-title {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 4rem;
+  color: #08ccfd;
+}
+
+.detail-portfolio {
+  margin-top: 16px;
+  margin-bottom: 22px;
+  font-size: 1.4rem;
+  font-family: var(--font-nav);
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: #fff;
+}
+
+.container-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+/* .container-gallery a{
+  width: 280px;
+} */
+
+.container-project {
+  padding-top: 18px;
+  width: 280px;
+  position: relative;
+  margin:  0 auto;
+}
+
+.container-project img {
+  width: 280px;
+  height: 170px;
+}
+
+.view-project {
+  display: none;
+}
+
+.container-project:hover div {
+  display: initial;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://jacekjeznach.com/wp-content/themes/new/img/circle.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  animation-name: view-project;
+  animation-timing-function: ease;
+  animation-duration: 1s;
+}
+
+.container-project:hover img {
+  opacity: 0.2;
+  transition: all 0.5s ease 0s;
+}
+
+.link-to-proyectos {
+  color: #08ccfd;
+  text-decoration: none;
+}
+
+
+
+@keyframes view-project {
+  0% {
+    transform: translateZ(5px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.link-api {
+  text-decoration: none;
+  color: #08ccfd;
+}
+.technology{
+  font-weight: 500;
+  color: #faebd7;
+}
+
+@media screen and (min-width:650px) {
+  .container-gallery{
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    max-width: 950px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .container-portfolio {
+    width:65%;
+  }
+  .container-project {
+    margin:  0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-portfolio {
+    width:70%;
+  }
+
+}

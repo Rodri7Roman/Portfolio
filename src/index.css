@@ -1,0 +1,22 @@
+:root {
+  /* Colores */
+  --text-white: #ffffff;
+  --font-size: 2.2rem;
+  --font-info: 'Sono', sans-serif;
+  --font-title: 'Patua One', cursive;
+  --font-nav: 'Open Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
+}

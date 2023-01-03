@@ -1,0 +1,155 @@
+.container-about {
+  padding-top: 80px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.henry{
+    color: #ffff00;
+    text-decoration: none;
+}
+.uade{
+    color: #08ccfd;
+    text-decoration: none;
+}
+
+.line-height{
+    line-height: 2.4rem;
+    font-weight: 400;
+}
+
+.img-about{
+    margin-top: 16px;
+}
+
+.img-about img{
+    width: 100%;
+    max-width: 260px;
+    border-radius: 20px;
+}
+
+
+.about-second{
+    padding-top: 16px;
+}
+
+.ul-about{
+    padding-top: 12px;
+}
+
+.ul-about li{
+    list-style-type: none;
+    padding-bottom: 12px;
+}
+.ul-about li p{
+    color: #fff;
+    font-size: 1.6rem;
+    margin-bottom: 2px;
+}
+
+.progress{
+    max-width: 700px;
+}
+
+.pintJS{
+    width: 80%;
+    animation-name: cargarProgreso;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    background-color: #08ccfd;
+}
+
+
+.pintRedux{
+    width: 70%;
+    animation-name: cargarProgreso;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    background-color: #08ccfd;
+}
+.pintReact{
+    width: 80%;
+    animation-name: cargarProgreso;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    background-color: #08ccfd;
+}
+.pintExpress{
+    width: 80%;
+    animation-name: cargarProgreso;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    background-color: #08ccfd;
+}
+.pintPyhton{
+    width: 80%;
+    animation-name: cargarProgreso;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    background-color: #08ccfd;
+}
+
+.pintBootstrap{
+    width: 90%;
+    animation-name: cargarProgreso;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    background-color: #08ccfd;
+}
+.pintSass{
+    width: 90%;
+    animation-name: cargarProgreso;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    background-color: #08ccfd;
+}
+.pintNode{
+    width: 70%;
+    animation-name: cargarProgreso;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    background-color: #08ccfd;
+}
+.pintSequelize{
+    width: 70%;
+    animation-name: cargarProgreso;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    background-color: #08ccfd;
+}
+
+.pintCSS{
+    width: 90%;
+    /* background-color: #08ccfd;
+    border-radius: 0 8px 8px 0; */
+    animation-name: cargarProgreso;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    background-color: #08ccfd;
+}
+
+
+
+@keyframes cargarProgreso {
+    0%{
+        transform: translateX(-300px);
+    }
+    100%{
+        background-color: #08ccfd;
+    }
+}
+
+
+@media screen and (min-width: 990px) {
+        .container-about {
+          width:65%;
+        }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .container-about {
+      width:70%;
+    }
+
+}
