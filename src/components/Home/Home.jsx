@@ -82,7 +82,7 @@ const Home = (props) => {
           </p>
         </div>
         <div className="container-contactame">
-          <NavLink to="/contact">
+          <NavLink to="/contacto">
             <button className="button-contactame">
               <span className="anim"></span>Contáctame
             </button>
