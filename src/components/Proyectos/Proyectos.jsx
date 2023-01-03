@@ -42,7 +42,7 @@ const Proyectos = (props) => {
               >
                 The Dog API
               </a>
-              , realizada para el Proyecto Individual de{" "}
+              , y también creando una base de datos. Realizada para el Proyecto Individual de{" "}
               <a
                 href="https://www.soyhenry.com/"
                 target="_blank"
