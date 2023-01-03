@@ -57,10 +57,12 @@ const Proyectos = (props) => {
             </p>
           </div>
         )}
-        <div className="container-project">
-          <img src="/img/rick.jpeg" alt="Imagen proyecto rick&morty" />
-          <div className="view-project"></div>
-        </div>
+        <a href="https://rick-morty-green-three.vercel.app" target="_blank">
+          <div className="container-project">
+            <img src="/img/rick.jpeg" alt="Imagen proyecto rick&morty" />
+            <div className="view-project"></div>
+          </div>
+        </a>
         {location === "/proyectos" && (
           <div>
             <p className="detail-portfolio">
@@ -105,7 +107,7 @@ const Proyectos = (props) => {
           </div>
         )}
         <div className="container-project">
-          <img 
+          <img
             src="/img/Process-rafiki.png"
             alt="Imagen proyecto en progreso"
           />
