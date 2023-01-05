@@ -24,8 +24,9 @@ const Home = (props) => {
     "m",
     "á",
     "n",
+    ",",
   ];
-  const web = ["W", "e", "b", " ", "D", "e", "v", "e", "l", "o", "p", "e", "r"];
+  const web = ["w", "e", "b", " ", "d", "e", "v", "e", "l", "o", "p", "e", "r"];
   const full = [
     "F",
     "u",
@@ -51,14 +52,14 @@ const Home = (props) => {
 
   const mapLetras = (letra, i) => {
     return (
-      <span className="letra" key={i}>
+      <p className="letra" key={i}>
         {letra}
-      </span>
+      </p>
     );
   };
   return (
     <div>
-      <div className="container-home">
+      <div className="container-home" id="home">
         <div className="container-text">
           <h1 className="text-bienvenida">
             {hola.map((letra, i) => {
@@ -82,11 +83,11 @@ const Home = (props) => {
           </p>
         </div>
         <div className="container-contactame">
-          <NavLink to="/contacto">
+          <a href="#contacto">
             <button className="button-contactame">
               <span className="anim"></span>Contáctame
             </button>
-          </NavLink>
+          </a>
         </div>
       </div>
       <About />

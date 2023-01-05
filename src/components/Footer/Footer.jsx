@@ -1,35 +1,34 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
   return (
     <div className="flex-footer">
       <div className="container-logo">
-        <NavLink to="/home" className={"logo"}>
+        <a href="/" className={"logo"}>
           <img src="/img/icons8-r-64.png" alt="" />
-        </NavLink>
+        </a>
         <ul className="container-list-footer">
           <li>
-            <NavLink className={"link-nav"} to="/">
+            <a className={"link-nav"} href="#home">
               Home
-            </NavLink>
+            </a>
           </li>
           <li>
-            <NavLink className={"link-nav"} to="/proyectos">
+            <a className={"link-nav"} href="#portfolio">
               Proyectos
-            </NavLink>
+            </a>
           </li>
           <li>
-            <NavLink className={"link-nav"} to="/contacto">
+            <a className={"link-nav"} href="#contacto">
               Contacto
-            </NavLink>
+            </a>
           </li>
         </ul>
       </div>
 
       <div className="container-redes">
-        <h2 className="contact-text">Contacto</h2>
+        <h2 className="contact-text">Redes</h2>
         <div className="container-redes-footer">
           <div className="redes-footer">
             <img src="/img/icons8-github.svg" alt="logo" />

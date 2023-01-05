@@ -1,27 +1,12 @@
 import "./styles.css";
-import { NavLink } from "react-router-dom";
-
-import { useLocation } from "react-router-dom";
 
 const Proyectos = (props) => {
-  const location = props.location;
   return (
-    <div className="container-portfolio">
+    <div className="container-portfolio" id="portfolio">
       <h2 className="text-title">Mis Proyectos</h2>
       <p className="detail-portfolio">
         Aquí se encuentra una galeria sobre mis proyectos realizados hasta la
         actualidad.{" "}
-        {location !== "/proyectos" ? (
-          <p>
-            Ingrese{" "}
-            <NavLink to="/proyectos" className="link-to-proyectos">
-              Aquí
-            </NavLink>{" "}
-            para conocerlos en profundidad.
-          </p>
-        ) : (
-          ""
-        )}
       </p>
 
       <section className="container-gallery">
@@ -31,7 +16,7 @@ const Proyectos = (props) => {
             <div className="view-project"></div>
           </div>
         </a>
-        {location === "/proyectos" && (
+   
           <div>
             <p className="detail-portfolio">
               SPA consumiendo{" "}
@@ -42,7 +27,8 @@ const Proyectos = (props) => {
               >
                 The Dog API
               </a>
-              , y también creando una base de datos. Realizada para el Proyecto Individual de{" "}
+              , y también creando una base de datos. Realizada para el Proyecto
+              Individual de{" "}
               <a
                 href="https://www.soyhenry.com/"
                 target="_blank"
@@ -56,14 +42,12 @@ const Proyectos = (props) => {
               </p>
             </p>
           </div>
-        )}
         <a href="https://rick-morty-green-three.vercel.app" target="_blank">
           <div className="container-project">
             <img src="/img/rick.jpeg" alt="Imagen proyecto rick&morty" />
             <div className="view-project"></div>
           </div>
         </a>
-        {location === "/proyectos" && (
           <div>
             <p className="detail-portfolio">
               SPA consumiendo{" "}
@@ -86,7 +70,6 @@ const Proyectos = (props) => {
               <p className="technology">React, JavaScript, Redux, CSS.</p>
             </p>
           </div>
-        )}
         <a
           href="https://rodri7roman.github.io/entrega_final_DW/"
           target="_blank"
@@ -96,7 +79,7 @@ const Proyectos = (props) => {
             <div className="view-project"></div>
           </div>
         </a>
-        {location === "/proyectos" && (
+  
           <div>
             <p className="detail-portfolio">
               Primer app estática realizada desde mi comienzo en el mundo del
@@ -105,30 +88,24 @@ const Proyectos = (props) => {
               <p className="technology">CSS, SASS, HTML.</p>
             </p>
           </div>
-        )}
+
         <div className="container-project">
           <img
             src="/img/Process-rafiki.png"
             alt="Imagen proyecto en progreso"
           />
         </div>
-        {location === "/proyectos" && (
-          <div>
-            <p className="detail-portfolio">
-              Videojuego realizado con Python realizado en la universidad{" "}
-              <a
-                href="https://www.uade.edu.ar/"
-                target="_blank"
-                className="uade"
-              >
-                UADE
-              </a>{" "}
-              cursando la carrera Ingenieria Informática. Teconologías
-              utilizadas:
-              <p className="technology">Python.</p>
-            </p>
-          </div>
-        )}
+
+        <div>
+          <p className="detail-portfolio">
+            Videojuego realizado con Python realizado en la universidad{" "}
+            <a href="https://www.uade.edu.ar/" target="_blank" className="uade">
+              UADE
+            </a>{" "}
+            cursando la carrera Ingenieria Informática. Teconologías utilizadas:
+            <p className="technology">Python.</p>
+          </p>
+        </div>
       </section>
     </div>
   );

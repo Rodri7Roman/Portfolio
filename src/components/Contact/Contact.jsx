@@ -32,7 +32,7 @@ const Contact = (props) => {
   };
 
   return (
-    <div className="container-contact">
+    <div className="container-contact" id="contacto">
       <h2 className="text-title">Contactame</h2>
       {location === "/contacto" && (
         <div>

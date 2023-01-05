@@ -18,27 +18,27 @@ const Nav = (props) => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <div className="logo-container">
-            <NavLink to="/" className="container-img-logo">
+            <a href="/" className="container-img-logo">
               <img src="/img/icons8-r-64.png" alt="miLogo" />
               <p className="name">Román</p>
-            </NavLink>
+            </a>
 
             <p className="desc">Full Stack Developer</p>
           </div>
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <NavLink to="/about" className="nav-link">
+              <a href="#about" className="nav-link">
                 Sobre mí
-              </NavLink>
+              </a>
             </li>
 
-            <NavLink to="/proyectos" className="nav-link">
+            <a href="#portfolio" className="nav-link">
               Mis proyectos
-            </NavLink>
+            </a>
             <li className="nav-item">
-              <NavLink to="/contacto" className="nav-link last-link">
+              <a href="#contacto" className="nav-link last-link">
                 Contacto
-              </NavLink>
+              </a>
             </li>
           </ul>
           <div className="container-contacto">
