@@ -13,6 +13,14 @@
   text-decoration: none;
 }
 
+.uade:hover{
+    color: #08fdf1;
+}
+
+.henry:hover {
+  color: #ffc400;
+}
+
 .img-about {
   margin-top: 16px;
 }

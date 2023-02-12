@@ -27,6 +27,7 @@
 .container-gallery {
   display: grid;
   grid-template-columns: 1fr;
+  align-items: center;
 }
 /* .container-gallery a{
   width: 280px;
@@ -72,6 +73,7 @@
   color: #08ccfd;
   text-decoration: none;
 }
+
 
 
 

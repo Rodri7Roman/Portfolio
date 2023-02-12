@@ -3,25 +3,32 @@ import "./styles.css";
 const About = (props) => {
   return (
     <div id="about" className="container-about">
-      <h2 className="text-title">Sobre mí</h2>
-      <div className="img-about">
-        <img src="/img/kak.jpg" alt="" />
-      </div>
-      <p className="detail-portfolio margin-about">
-        Hola! Soy Rodrigo Román, tengo 21 años.
-        <p>
-          Soy un apasionado por la tecnologia y los videojuegos. Estudio
-          Ingeniería Informática desde 2020 en{" "}
-          <a href="https://www.uade.edu.ar/" target="_blank" className="uade">
-            UADE
-          </a>{" "}
-          con la ilusión de convertirme en Ingeniero. También di mi paso por{" "}
-          <a href="https://www.soyhenry.com/" target="_blank" className="henry">
-            Henry
-          </a>{" "}
-          logrando terminar la carrera de Desarrollador Full Stack.
+      <div className="about-second">
+        <h2 className="text-title">Sobre mí</h2>
+        <div className="img-about">
+          <img src="/img/kak.jpg" alt="" />
+        </div>
+        <p className="detail-portfolio margin-about">
+          Hola! Soy Rodrigo Román, tengo 21 años.
+          <p>
+            Soy un apasionado por la tecnologia y los videojuegos. Estudio
+            Ingeniería Informática desde 2020 en{" "}
+            <a href="https://www.uade.edu.ar/" target="_blank" className="uade">
+              UADE
+            </a>{" "}
+            con la ilusión de convertirme en Ingeniero. También di mi paso por{" "}
+            <a
+              href="https://www.soyhenry.com/"
+              target="_blank"
+              className="henry"
+            >
+              Henry
+            </a>{" "}
+            logrando terminar la carrera de Desarrollador Full Stack.
+          </p>
         </p>
-      </p>
+      </div>
+
       <div className="about-second">
         <div>
           <h2 className="text-title">Trayecto</h2>
@@ -43,7 +50,7 @@ const About = (props) => {
             <a className="henry" target={"_blank"} href="coderhouse.com">
               CoderHouse
             </a>
-            . Luego seguir el espectacular Bootcamp {" "}
+            . Luego seguir el espectacular Bootcamp{" "}
             <a
               href="https://www.soyhenry.com/"
               target="_blank"
