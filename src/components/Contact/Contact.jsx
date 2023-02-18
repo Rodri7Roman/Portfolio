@@ -6,6 +6,22 @@ import { useState } from "react";
 import Swal from "sweetalert2";
 
 const Contact = (props) => {
+
+  const mostrarElemento = () => {
+    let animado = document.querySelectorAll(".animado");
+    console.log(animado)
+    let scroll = document.documentElement.scrollTop;
+    for (let i = 0; i < animado.length ; i++){
+      let alturaAnimado = animado[i].offsetTop;
+      if (alturaAnimado - 500 < scroll) {
+        animado[i].style.opacity = 1;
+        animado[i].classList.add("mostrarArriba")
+      }
+    }
+
+  };
+  window.addEventListener("scroll", mostrarElemento);
+
   const location = props.location;
   const [userData, setUserData] = React.useState({
     from_name: "",
@@ -84,7 +100,7 @@ const Contact = (props) => {
   };
 
   return (
-    <div className="container-contact" id="contacto">
+    <div className="container-contact animado" id="contacto">
       <h2 className="text-title">Contactame</h2>
       {location === "/contacto" && (
         <div>

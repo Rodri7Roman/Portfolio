@@ -4,6 +4,9 @@
   width: 90%;
   margin: 0 auto;
   display: table;
+  animation-name: aparecerElemento;
+  animation-duration: 1s;
+  animation-timing-function: ease;
 }
 
 .container-home div {
@@ -93,6 +96,16 @@
 @keyframes blink {
   50% {
     border-color: transparent;
+  }
+}
+
+@keyframes aparecerElemento {
+  0%{
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
   }
 }
 

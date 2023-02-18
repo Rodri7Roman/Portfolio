@@ -1,7 +1,9 @@
 .container-about {
-  padding-top: 80px;
+  /* padding-top: 80px; */
   width: 90%;
   margin: 0 auto;
+  opacity: 0;
+  transition: all 0.5s ;
 }
 
 .henry {
@@ -137,6 +139,19 @@
   animation-duration: 1.5s;
   animation-timing-function: ease;
   background-color: #08ccfd;
+}
+
+.mostrarArriba {
+  animation: mostrarArriba 1.5s;
+}
+
+@keyframes mostrarArriba {
+  0%{
+    transform: translateY(80px);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
 
 @keyframes cargarProgreso {

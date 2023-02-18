@@ -1,8 +1,23 @@
 import "./styles.css";
 
 const Proyectos = (props) => {
+  const mostrarElemento = () => {
+    let animado = document.querySelectorAll(".animado");
+    console.log(animado)
+    let scroll = document.documentElement.scrollTop;
+    for (let i = 0; i < animado.length ; i++){
+      let alturaAnimado = animado[i].offsetTop;
+      if (alturaAnimado - 800 < scroll) {
+        animado[i].style.opacity = 1;
+        animado[i].classList.add("mostrarArriba")
+      }
+    }
+
+  };
+  window.addEventListener("scroll", mostrarElemento);
+
   return (
-    <div className="container-portfolio" id="portfolio">
+    <div className="container-portfolio animado" id="portfolio">
       <h2 className="text-title">Mis Proyectos</h2>
       <p className="detail-portfolio">
         Aquí se encuentra una galeria sobre mis proyectos realizados hasta la

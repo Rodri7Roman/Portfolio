@@ -1,8 +1,24 @@
 import "./styles.css";
 
 const About = (props) => {
+
+  const mostrarElemento = () => {
+    let animado = document.querySelectorAll(".animado");
+    console.log(animado)
+    let scroll = document.documentElement.scrollTop;
+    for (let i = 0; i < animado.length ; i++){
+      let alturaAnimado = animado[i].offsetTop;
+      if (alturaAnimado - 500 < scroll) {
+        animado[i].style.opacity = 1;
+        animado[i].classList.add("mostrarArriba")
+      }
+    }
+
+  };
+  window.addEventListener("scroll", mostrarElemento);
+
   return (
-    <div id="about" className="container-about">
+    <div id="about" className="container-about animado">
       <div className="about-second">
         <h2 className="text-title">Sobre mí</h2>
         <div className="img-about">
@@ -29,7 +45,7 @@ const About = (props) => {
         </p>
       </div>
 
-      <div className="about-second">
+      <div className="about-second animado">
         <div>
           <h2 className="text-title">Trayecto</h2>
           <p className="detail-portfolio">
@@ -67,7 +83,7 @@ const About = (props) => {
           </p>
         </div>
         <h2 className="text-title">Tecnologías</h2>
-        <div className="flex-tecnologias">
+        <div className="flex-tecnologias animado" >
           <ul className="ul-about">
             <li>
               <p>JavaScript</p>
