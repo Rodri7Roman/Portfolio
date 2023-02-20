@@ -1,21 +1,20 @@
+import { useRef } from "react";
 import "./styles.css";
-
+import Canvas from "./Canvas";
 const About = (props) => {
-
   const mostrarElemento = () => {
     let animado = document.querySelectorAll(".animado");
-    console.log(animado)
     let scroll = document.documentElement.scrollTop;
-    for (let i = 0; i < animado.length ; i++){
+    for (let i = 0; i < animado.length; i++) {
       let alturaAnimado = animado[i].offsetTop;
       if (alturaAnimado - 500 < scroll) {
         animado[i].style.opacity = 1;
-        animado[i].classList.add("mostrarArriba")
+        animado[i].classList.add("mostrarArriba");
       }
     }
-
   };
   window.addEventListener("scroll", mostrarElemento);
+
 
   return (
     <div id="about" className="container-about animado">
@@ -83,8 +82,10 @@ const About = (props) => {
           </p>
         </div>
         <h2 className="text-title">Tecnologías</h2>
-        <div className="flex-tecnologias animado" >
-          <ul className="ul-about">
+        <div className="flex-tecnologias animado">
+          <Canvas/>
+
+          {/* <ul className="ul-about">
             <li>
               <p>JavaScript</p>
               <div className="progress">
@@ -154,7 +155,7 @@ const About = (props) => {
                 <span className="pintNode"></span>
               </div>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </div>

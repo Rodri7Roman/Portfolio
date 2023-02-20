@@ -36,11 +36,11 @@
 .about-second {
   padding-top: 16px;
 }
-
+/* 
 .flex-tecnologias {
   display: flex;
   justify-content: space-between;
-}
+} */
 
 .ul-about {
   padding-top: 12px;
@@ -144,6 +144,16 @@
 .mostrarArriba {
   animation: mostrarArriba 1.5s;
 }
+
+.bgCanvas{
+  width: 100%;
+}
+
+
+/* .block{
+  display: block;
+} */
+
 
 @keyframes mostrarArriba {
   0%{

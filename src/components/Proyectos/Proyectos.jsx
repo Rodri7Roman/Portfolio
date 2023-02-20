@@ -3,7 +3,6 @@ import "./styles.css";
 const Proyectos = (props) => {
   const mostrarElemento = () => {
     let animado = document.querySelectorAll(".animado");
-    console.log(animado)
     let scroll = document.documentElement.scrollTop;
     for (let i = 0; i < animado.length ; i++){
       let alturaAnimado = animado[i].offsetTop;
