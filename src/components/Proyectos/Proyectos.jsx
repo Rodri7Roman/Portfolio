@@ -153,14 +153,14 @@ const Proyectos = (props) => {
 
         <div>
           <p className="detail-portfolio">
-            Videojuego realizado con Python realizado en la universidad{" "}
+            Videojuego REVERSI realizado con Python realizado en la universidad{" "}
             <a href="https://www.uade.edu.ar/" target="_blank" className="uade">
               UADE
             </a>{" "}
             cursando la carrera Ingenieria Informática. Teconologías utilizadas:
             <p className="technology">Python.</p>
             <a href="./Reversi.rar" className="uade">
-              Descargar Videojuego
+              Descargar Videojuego: Ejecutar REVERSI.exe
             </a>
           </p>
         </div>
