@@ -39,8 +39,12 @@ const About = (props) => {
             >
               Henry
             </a>{" "}
-            logrando terminar la carrera de Desarrollador Full Stack.
+            logrando terminar la carrera de Desarrollador Full Stack. {" "}
+            <a href="./RomanFullStack.pdf" download className="uade">
+              Descargar CV
+            </a>
           </p>
+
         </p>
       </div>
 

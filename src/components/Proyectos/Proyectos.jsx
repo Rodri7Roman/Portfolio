@@ -4,14 +4,13 @@ const Proyectos = (props) => {
   const mostrarElemento = () => {
     let animado = document.querySelectorAll(".animado");
     let scroll = document.documentElement.scrollTop;
-    for (let i = 0; i < animado.length ; i++){
+    for (let i = 0; i < animado.length; i++) {
       let alturaAnimado = animado[i].offsetTop;
       if (alturaAnimado - 800 < scroll) {
         animado[i].style.opacity = 1;
-        animado[i].classList.add("mostrarArriba")
+        animado[i].classList.add("mostrarArriba");
       }
     }
-
   };
   window.addEventListener("scroll", mostrarElemento);
 
@@ -143,10 +142,13 @@ const Proyectos = (props) => {
         </div>
 
         <div className="container-project">
-          <img
-            src="/img/Process-rafiki.png"
-            alt="Imagen proyecto en progreso"
-          />
+          <a href="./Reversi.rar" className="uade">
+            <img
+              src="/img/Process-rafiki.png"
+              alt="Imagen proyecto en progreso"
+            />
+            <div className="view-project"></div>
+          </a>
         </div>
 
         <div>
@@ -157,6 +159,9 @@ const Proyectos = (props) => {
             </a>{" "}
             cursando la carrera Ingenieria Informática. Teconologías utilizadas:
             <p className="technology">Python.</p>
+            <a href="./Reversi.rar" className="uade">
+              Descargar Videojuego
+            </a>
           </p>
         </div>
       </section>
